@@ -6,6 +6,9 @@
 			<constructor-arg value="Umesh" type="java.lang.String"></constructor-arg>
 			<constructor-arg value="umesh.soni@newgen.co.in" type="java.lang.String"></constructor-arg>
 			<constructor-arg ref="address" type="beans.Address"></constructor-arg>
+			<constructor-arg type="java.util.HashSet">
+				<set><ref bean="book1"/></set>
+			</constructor-arg>
 		</bean>
 		
 		<bean id = "address" class="beans.Address">
@@ -13,6 +16,13 @@
 			<constructor-arg value="127021" type="int" index="1"></constructor-arg>
 			<constructor-arg value="Haryana" type="java.lang.String" index="2"></constructor-arg>
 			<constructor-arg value="India" type="java.lang.String" index="3"></constructor-arg>
+		</bean>
+		
+		<bean id = "book1" class = "beans.Book">
+			<constructor-arg value="1001" type="java.lang.String" index="0"> </constructor-arg>
+			<constructor-arg value="Biggners Guide" type="java.lang.String" index="1"> </constructor-arg>
+			<constructor-arg value="Rai" type="java.lang.String" index="2"> </constructor-arg>
+			<constructor-arg value="2015" type="java.lang.Integer" index="3"> </constructor-arg>
 		</bean>
 			
 		</beans>
