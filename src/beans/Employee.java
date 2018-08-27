@@ -3,8 +3,7 @@ package beans;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class Employee {
-	
+public class Employee {	
 	private int age;
 	private String name;
 	private String email;
